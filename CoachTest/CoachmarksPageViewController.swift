@@ -10,8 +10,6 @@ class CoachmarksPageViewController: UIPageViewController {
     
     weak var coachmarksDelegate: CoachmarksPageViewControllerDelegate?
     var pageControl: UIPageControl!
-    static var doubleCheckIndex = 0
-    static var loadVC5 = false
     
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         // The view controllers will be shown in this order
@@ -90,7 +88,6 @@ class CoachmarksPageViewController: UIPageViewController {
         if let firstViewController = viewControllers?.first,
             let index = orderedViewControllers.indexOf(firstViewController) {
             print("notifyCoachmarksDelegateOfNewIndex index: \(index)")
-            CoachmarksPageViewController.doubleCheckIndex = index
             coachmarksDelegate?.coachmarksPageViewController(self,
                                                              didUpdatePageIndex: index)
         }
@@ -246,7 +243,6 @@ class ViewController4: UIViewController {
         let imageView = UIImageView(frame: view.bounds)
         imageView.image = UIImage(named: "coachmarks4")
         view.addSubview(imageView)
-        CoachmarksPageViewController.loadVC5 = true
     }
 }
 
