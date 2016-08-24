@@ -1,0 +1,29 @@
+should be 0
+notifyCoachmarksDelegateOfNewIndex index: 0
+
+orderedViewControllersCount: 5 nextIndex: 1
+should be 1
+should be 4
+swiped
+swiped
+notifyCoachmarksDelegateOfNewIndex index: 1
+
+orderedViewControllersCount: 5 nextIndex: 2
+should be 2
+swiped
+swiped
+notifyCoachmarksDelegateOfNewIndex index: 2
+
+orderedViewControllersCount: 5 nextIndex: 3
+should be 3
+swiped
+swiped
+notifyCoachmarksDelegateOfNewIndex index: 3
+orderedViewControllersCount: 5 nextIndex: 4
+
+swiped
+swiped
+notifyCoachmarksDelegateOfNewIndex index: 4
+
+orderedViewControllersCount: 5 nextIndex: 5
+last item in coachamrks going to dismiss
