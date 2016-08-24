@@ -1,6 +1,8 @@
+//Loads with VC1 showing
 should be 0
 notifyCoachmarksDelegateOfNewIndex index: 0
 
+//Swiped right to show VC2
 orderedViewControllersCount: 5 nextIndex: 1
 should be 1
 should be 4
@@ -8,12 +10,14 @@ swiped
 swiped
 notifyCoachmarksDelegateOfNewIndex index: 1
 
+//Swiped right to show VC3
 orderedViewControllersCount: 5 nextIndex: 2
 should be 2
 swiped
 swiped
 notifyCoachmarksDelegateOfNewIndex index: 2
 
+//Swiped right to show VC4
 orderedViewControllersCount: 5 nextIndex: 3
 should be 3
 swiped
@@ -21,9 +25,11 @@ swiped
 notifyCoachmarksDelegateOfNewIndex index: 3
 orderedViewControllersCount: 5 nextIndex: 4
 
+//Swiped right to show VC5
 swiped
 swiped
 notifyCoachmarksDelegateOfNewIndex index: 4
 
+//Swiped right to exit out of CoachmarksPageViewController
 orderedViewControllersCount: 5 nextIndex: 5
-last item in coachamrks going to dismiss
+last item in coachamrks going to dismiss //DISMISSED CoachmarksViewControllers
