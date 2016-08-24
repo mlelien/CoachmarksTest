@@ -30,4 +30,4 @@ swiped
 swiped
 notifyCoachmarksDelegateOfNewIndex index: 4
 orderedViewControllersCount: 5 nextIndex: 5
-last item in coachamrks going to dismiss
+last item in coachamrks going to dismiss //DISMISSED CoachmarksViewControllers
